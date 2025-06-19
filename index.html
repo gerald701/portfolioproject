@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+     <div class="dark-mode">🌙</div>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container home-content">
+            <img src="gerald.jpg" alt="Profile Photo" class="profile-img"/>
+            <div>
+                <h1>Hi, I'm Fuentes, Gerald John Philip E.</h1>
+                <p>
+                    Welcome to my portfolio website! I'm a passionate developer with expertise in Java, HTML, CSS, and more. Explore my work, skills, and get in touch!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Java</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Spring Boot</li>
+                <li>MySQL</li>
+                <li>Git & GitHub</li>
+                <li>Responsive Design</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-list">
+                <div class="project-card">
+                    <h3>Project Tempt Converter</h3>
+                    <p>celsius to farenheit can be vice versa. <a href="file:///C:/Users/asus/OneDrive/Desktop/ProjectSytem/try/homepage.html" target="http://127.0.0.1:5500/ProjectSytem/calc.html">View Details</a></p>
+                </div>
+                <div class="project-card">
+                    <h3>Project Basic Calculator</h3>
+                    <p>short and easy basic website calculator <a href="file:///C:/Users/asus/OneDrive/Desktop/ProjectSytem/projects/calc/homepage.html">View Details</a></p>
+                </div>
+                <div class="project-card">
+                    <h3>Project Type Racer</h3>
+                    <p>a fast annd very simple type racer website that you can compete with your friends <a href="file:///C:/Users/asus/OneDrive/Desktop/ProjectSytem/projects/type%20racer/homepage.html" target="calc.html">View Details</a></p>
+                </div>
+                <div class="project-card">
+                    <h3>Project Activity Project</h3>
+                    <p>Log in act <a href="file:///C:/Users/asus/OneDrive/Desktop/ProjectSytem/projects/FUENTES_FA1%20(1)/FUENTES_FA1/homepage.html" target="_blank">View Details</a></p>
+                </div>
+                <div class="project-card">
+                    <h3>Project Activity Project 2</h3>
+                    <p>a clean and simple shop store <a href="file:///C:/Users/asus/OneDrive/Desktop/ProjectSytem/projects/Act2_Fuentes/homepage.html" target="_blank">View Details</a></p>
+                </div>
+                <!-- Add up to 8 projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="aboutme" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I am a dedicated and passionate software developer with X years of hands-on experience in building both web-based and desktop applications. Throughout my journey in programming, I have developed a strong foundation in full-stack development, working with technologies such as HTML, CSS, JavaScript, Java, and MySQL, as well as tools and frameworks including React, Java Swing, and Bootstrap.
+
+My love for coding goes beyond just solving problems — I enjoy bringing creative ideas to life and building user-friendly, efficient, and meaningful digital experiences. I believe that technology is a powerful tool for innovation, and I strive to stay up to date with emerging trends and best practices in software development.
+
+As a student at National University - MOA, I continuously challenge myself by working on personal projects, collaborating with peers, and participating in academic software development activities. Whether it's designing intuitive user interfaces, developing secure login systems, or managing databases, I am always eager to learn, grow, and refine my skills.
+
+I take pride in being a detail-oriented and goal-driven individual who enjoys turning complex ideas into real-world solutions through clean and efficient code. With a mindset rooted in curiosity and innovation, I aim to contribute positively to the tech industry and make a lasting impact as a future professional developer.
+
+
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="GeraldFuentes07@yahoo.com">GeraldFuentes07@yahoo.com</a></p>
+            <p>LinkedIn: <a href="#" target="_blank">YourLinkedIn</a></p>
+            <p>GitHub: <a href="#" target="_blank">YourGitHub</a></p>
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" name="name" required>
+                <input type="email" placeholder="Your Email" name="email" required>
+                <textarea placeholder="Your Message" name="message" required></textarea>
+                <button type="submit">Send</button>
+                <p class="form-success" id="formSuccess"></p>
+            </form>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>

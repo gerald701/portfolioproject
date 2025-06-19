@@ -1,0 +1,115 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Dark mode (default) */
+body.dark {
+  background: #1e1e2f;
+  color: #fff;
+}
+
+body.dark input[type="number"] {
+  background-color: #1e1e2f;
+  color: white;
+}
+
+body.dark .converter {
+  background: #292942;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+body.dark .mode-label {
+  color: #ccc;
+}
+
+/* Light mode */
+body.light {
+  background: #f0f0f0;
+  color: #222;
+}
+
+body.light input[type="number"] {
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+body.light .converter {
+  background: #ffffff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+body.light .mode-label {
+  color: #555;
+}
+
+body.light button {
+  background: #007acc;
+}
+
+body.light button:hover {
+  background: #005fa3;
+}
+
+/* Converter box */
+.converter {
+  padding: 30px;
+  border-radius: 12px;
+  width: 320px;
+  text-align: center;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+/* Heading */
+.converter h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* Input */
+input[type="number"] {
+  width: 80%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 15px;
+  font-size: 16px;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Buttons */
+button {
+  background: #00bcd4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0197a3;
+}
+
+/* Result text */
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Mode label text */
+.mode-label {
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: block;
+}

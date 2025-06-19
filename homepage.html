@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reversible Temperature Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+  <div class="converter">
+    <h2>Temperature Converter</h2>
+    <span class="mode-label" id="modeLabel">Mode: Celsius ➜ Fahrenheit</span>
+    <input type="number" id="temperature" placeholder="Enter temperature">
+    <br>
+    <button onclick="convert()">Convert</button>
+    <button onclick="toggleMode()">Switch Mode</button>
+    <button onclick="toggleTheme()">Toggle Theme</button>
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    let isCtoF = true;
+
+    function convert() {
+      const tempInput = document.getElementById('temperature').value;
+      const resultDiv = document.getElementById('result');
+      if (tempInput === '') {
+        resultDiv.innerText = 'Please enter a temperature!';
+        return;
+      }
+      const temp = parseFloat(tempInput);
+      const result = isCtoF
+        ? (temp * 9 / 5) + 32
+        : (temp - 32) * 5 / 9;
+      resultDiv.innerText = isCtoF
+        ? `${temp}°C = ${result.toFixed(2)}°F`
+        : `${temp}°F = ${result.toFixed(2)}°C`;
+    }
+
+    function toggleMode() {
+      isCtoF = !isCtoF;
+      document.getElementById('modeLabel').innerText = isCtoF
+        ? 'Mode: Celsius ➜ Fahrenheit'
+        : 'Mode: Fahrenheit ➜ Celsius';
+      document.getElementById('result').innerText = '';
+      document.getElementById('temperature').value = '';
+    }
+
+    function toggleTheme() {
+      document.body.classList.toggle('light');
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
